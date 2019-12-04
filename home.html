@@ -14,7 +14,7 @@
     	<div data-role="header">
     		<h1>Bonjour [user]</h1>
         <a href="login.html" data-icon="forbidden" class="ui-btn-left">Quitter</a>
-        <a href="quizz.html" data-icon="check" class="ui-btn-right">QUIZZ!</a>
+        <a href="#popupDialog" data-rel="popup" data-position-to="top" data-transition="slidedown" data-icon="check" class="ui-btn-right">QUIZZ!</a>
     	</div><!-- /header -->
 
     	<div role="main" class="ui-content">
@@ -60,12 +60,27 @@
               </div>
           </form>
 
+
+              <div data-role="popup" id="popupDialog" data-dismissible="false" style="max-width:400px;">
+                <div data-role="header" data-theme="a">
+                  <h1>Confirmer</h1>
+                </div>
+                <div role="main" class="ui-content">
+                  <h3 class="ui-title">Voulez vous lancer le quizz ?</h3>
+                  <p>Une fois le quizz commencé, vous devez le terminer.</p>
+                  <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Annuler</a>
+                  <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-c" data-rel="back" data-transition="flow">GO !</a>
+                </div>
+              </div>
     	</div><!-- /content -->
 
     	<div data-role="footer">
     		<h4>github.com/louisjdmartin</h4>
     	</div><!-- /footer -->
     </div><!-- /page -->
+
+
+
     <style media="all">
       @media all and (max-width: 500px) {
       	div.ui-block-a,
