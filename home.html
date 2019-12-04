@@ -17,18 +17,74 @@
     	</div><!-- /header -->
 
     	<div role="main" class="ui-content">
-        <ul data-role="listview" data-filter="true" data-filter-placeholder="Filtrer..." data-inset="true">
-          <li><a href="categorie.html" data-transition="slide" >Programmation</a></li>
-          <li><a href="categorie.html" data-transition="slide" >Réseau</a></li>
-          <li><a href="categorie.html" data-transition="slide" >BI</a></li>
-          <li><a href="categorie.html" data-transition="slide" >Infra</a></li>
-          <li><a href="categorie.html" data-transition="slide" >Gestion de projet</a></li>
-        </ul>
+          <form class='ui-grid-b ui-responsive'>
+            <div class='ui-block-c'>
+              <fieldset data-role="collapsible" data-mini="true" data-content-theme="false" data-collapsed="true">
+                <h4>Programmation</h4>
+                  <ul data-role="listview">
+                    <div data-role="controlgroup">
+                      <input type="checkbox" id="c" /><label for="c">C</label>
+                      <input type="checkbox" id="Cpp" /><label for="Cpp">C++</label>
+                      <input type="checkbox" id="Java" /><label for="Java">Java</label>
+                      <input type="checkbox" id="Python" /><label for="Python">Python</label>
+                    </div>
+                  </ul>
+              </fieldset>
+            </div>
+            <div  class="ui-block-b">
+              <fieldset data-role="collapsible" data-mini="true" data-content-theme="false" data-collapsed="true">
+                <h4>Réseau</h4>
+                  <ul data-role="listview">
+                    <div data-role="controlgroup">
+                      <input type="checkbox" id="Protocoles" /><label for="Protocoles">Protocoles</label>
+                      <input type="checkbox" id="Routage" /><label for="Routage">Routage</label>
+                      <input type="checkbox" id="Conception" /><label for="Conception">Conception</label>
+                      <input type="checkbox" id="Securite" /><label for="Securite">Sécurité</label>
+                    </div>
+                  </ul>
+              </fieldset>
+            </div>
+            <div  class="ui-block-c">
+                <fieldset data-role="collapsible" data-mini="true" data-content-theme="false" data-collapsed="true">
+                  <h4>Gestion de projet</h4>
+                    <ul data-role="listview">
+                      <div data-role="controlgroup">
+                        <input type="checkbox" id="A" /><label for="A">A</label>
+                        <input type="checkbox" id="B" /><label for="B">B</label>
+                        <input type="checkbox" id="C" /><label for="C">C</label>
+                        <input type="checkbox" id="C" /><label for="C">C</label>
+                      </div>
+                    </ul>
+                </fieldset>
+              </div>
+          </form>
+
     	</div><!-- /content -->
 
     	<div data-role="footer">
     		<h4>github.com/louisjdmartin</h4>
     	</div><!-- /footer -->
     </div><!-- /page -->
+    <style media="all">
+      @media all and (max-width: 500px) {
+      	div.ui-block-a,
+      	div.ui-block-b,
+      	div.ui-block-c,
+      	div.ui-block-d,
+      	div.ui-block-e {
+      		width: 100%;
+          padding:8px 0;
+      		float: none;
+      	}
+      }@media all and (min-width: 500px) {
+      	div.ui-block-a,
+      	div.ui-block-b,
+      	div.ui-block-c,
+      	div.ui-block-d,
+      	div.ui-block-e {
+          padding:8px 8px;
+      	}
+      }
+    </style>
   </body>
 </html>
