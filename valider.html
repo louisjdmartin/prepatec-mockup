@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>Login</title>
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  </head>
+
+  <body>
+    <div data-role="page">
+
+    	<div data-role="header">
+    		<h1>Bonjour [user]</h1>
+        <a href="home.html" data-icon="back" data-transition="slide" data-direction="reverse" class="ui-btn-back">Retour</a>
+      </div><!-- /header -->
+
+    	<div role="main" class="ui-content">
+        <ul data-role="listview">
+          <li>
+            <a href="#question" data-rel="popup" data-position-to="window" data-transition="pop"><h2>Qu'est-ce que le TDD ?</h2>
+              <p>Test Driven Development</p></a>
+            </li>
+          </ul>
+        <div data-role="popup" id="purchase" data-theme="a" data-overlay-theme="b" class="ui-content" style="max-width:340px; padding-bottom:2em;">
+          <h3>Valider la question</h3>
+          <p>Souhaitez vous ajouter cette question au quizz ?</p>
+          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+          <a href="index.html" data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-btn-b ui-icon-check ui-btn-icon-left ui-btn-inline ui-mini">Accepter</a>
+          <a href="index.html" data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-icon-delete ui-mini">Refuser</a>
+        </div>
+
+        <div data-role="popup" id="question" data-theme="a" data-overlay-theme="b" class="ui-content" style="max-width:340px; padding-bottom:2em;">
+          <h3>Qu'est-ce que le TDD ?</h3>
+          <p>
+            <strong>Test Driven Development</strong><br />
+            Réponse b<br />
+            Réponse c<br />
+            Réponse d
+          </p>
+          <h3>Catégorie</h3>
+          Développement => Test
+          <h3>Action</h3>
+          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+          <a href="index.html" data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-btn-b ui-icon-check ui-btn-icon-left ui-btn-inline ui-mini">Accepter</a>
+          <a href="index.html" data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-icon-delete ui-mini">Refuser</a>
+        </div>
+    	</div><!-- /content -->
+
+    	<div data-role="footer">
+    		<h4>github.com/louisjdmartin</h4>
+    	</div><!-- /footer -->
+    </div><!-- /page -->
+
+
+  </body>
+</html>
