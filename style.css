@@ -1,0 +1,19 @@
+@media all and (max-width: 500px) {
+  div.ui-block-a,
+  div.ui-block-b,
+  div.ui-block-c,
+  div.ui-block-d,
+  div.ui-block-e {
+    width: 100%;
+    padding:8px 0;
+    float: none;
+  }
+}@media all and (min-width: 500px) {
+  div.ui-block-a,
+  div.ui-block-b,
+  div.ui-block-c,
+  div.ui-block-d,
+  div.ui-block-e {
+    padding:8px 8px;
+  }
+}
