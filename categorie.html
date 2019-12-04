@@ -12,15 +12,19 @@
     <div data-role="page">
 
     	<div data-role="header">
-    		<h1>Login</h1>
+    		<h1>Programmation</h1>
+        <a href="home.html" data-icon="back" class="ui-btn-left" data-transition="slide" data-direction="reverse">Retour</a>
+        <a href="login.html" data-icon="forbidden" class="ui-btn-right">Quitter</a>
     	</div><!-- /header -->
 
     	<div role="main" class="ui-content">
-          <form action="home.html">
-            <input type="text" id="user" placeholder="Username" />
-      	    <input type="password" pattern="[0-9]*" inputmode="numeric" name="number" id="password" value="" placeholder="Mot de passe">
-      	    <input type="submit" value="Login" />
-          </form>
+        <ul data-role="listview" data-filter="true" data-filter-placeholder="Filtrer..." data-inset="true">
+          <li><a href="#">C</a></li>
+          <li><a href="#">C++</a></li>
+          <li><a href="#">Java</a></li>
+          <li><a href="#">Python</a></li>
+          <li><a href="#">.NET</a></li>
+        </ul>
     	</div><!-- /content -->
 
     	<div data-role="footer">
