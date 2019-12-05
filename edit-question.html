@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>Login</title>
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  </head>
+
+  <body>
+    <div data-role="page">
+
+    	<div data-role="header">
+    		<h1>Editer un quizz C#</h1>
+        <a href="edit-choose-quest.html" data-icon="back" data-transition="slide" data-direction="reverse" class="ui-btn-back">Retour</a>
+        <a href="edit-choose-quest.html" data-transition="slide" data-direction="reverse" data-icon="check" class="ui-btn-right">Save</a>
+      </div><!-- /header -->
+
+    	<div role="main" class="ui-content">
+          <form>
+            <label for="textarea">Question:</label>
+            <textarea cols="40" rows="8" name="textarea" id="textarea">Quelle est la portée d'une variable locale ?</textarea>
+
+            <h3>Bonne(s) réponse(s):</h3>
+            <input type="text" value="Dans la fonction uniquement" />
+            <input type="text" value="" />
+            <a href="#">Ajouter une réponse...</a>
+
+            <h3>Mauvaise(s) réponse(s):</h3>
+            <input type="text" value="Dans le programme entier" />
+            <input type="text" value="" />
+            <a href="#">Ajouter une réponse...</a>
+
+          </form>
+    	</div><!-- /content -->
+
+    	<div data-role="footer">
+    		<h4>github.com/louisjdmartin</h4>
+    	</div><!-- /footer -->
+    </div><!-- /page -->
+
+
+  </body>
+</html>
